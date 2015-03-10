@@ -4,3 +4,6 @@ _site
 
 # Ignore the config file that's used for gh-pages.
 _config.gh-pages.yml
+_post/2014-06-08-pixyll-has-pagination.md
+_post/2014-06-09-so-what-is-jekyll.md
+_post/2014-06-10-see-pixyll-in-action.md
