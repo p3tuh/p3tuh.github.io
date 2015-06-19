@@ -1,20 +1,155 @@
----
-layout: default
----
 
-<div class="home">
+<!DOCTYPE html>
+<html>
 
-  <div class="posts">
-    {% for post in paginator.posts %}
-      <div class="post">
-        <a href="{{ post.url | prepend: site.baseurl }}" class="post-link">
-          <p class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</p>
-          <h3 class="h2 post-title">{{ post.title }}</h3>
-          <p class="post-summary">{{ post.summary }}</p>
-        </a>
-      </div>
-    {% endfor %}
-  </div>
+<head>
 
-  {% include pagination.html %}
-</div>
+    <script type="text/javascript">var switchTo5x=true;</script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <title>Peter Kim</title>
+    <meta name="description" content="Software Engineer">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="style/style.css">
+    <link href="style/css_002.css" rel="stylesheet" type="text/css">
+    <link href="style/css.css" rel="stylesheet" type="text/css">
+
+    <script>
+
+    </script>
+
+</head>
+<body class="home-template">
+
+    
+
+<header id="site-head" style="background-image: url(assets/background.jpg); background-position-y: 51.6153846153846%;">
+    <div class="vertical">
+        <div id="site-head-content" class="inner">
+            <h1 class="blog-title">Peter Kim</h1>
+            <h2 class="blog-description">Software Engineer. Car Enthusiast.</h2>
+            <h2 class="blog-description">Builds Stuff.</h2>
+            <a class="btn first">About Me</a>
+            <a class="btn last">Contact</a><br>
+        </div>
+    </div>
+
+</header>
+
+<main class="content" role="main">
+
+    <div style="display: block;" class="fixed-nav">
+        <!-- <a class="fn-item" item_index="1">About Me</a>
+        <a class="fn-item" item_index="2">Projects</a>
+        <a class="fn-item active" item_index="3">Misc</a>
+        <a class="fn-item" item_index="4">Contact Me</a> -->
+    </div>
+
+    <div class="post-holder">
+        
+        <article item_index="1" id="about-me" class="post first">
+        
+            <header class="post-header">
+                
+                <h2 class="post-title">About Me</h2>
+
+            </header>
+            <section class="post-content">
+                <p>I am a software engineer specialising in all things Javascript. I have experience building full stack web applications and constantly learning new frameworks and technologies.</p>
+
+                <p>Technology I have worked with: Javascript, Angular.js, Node.js, Express.js, HTML5/CSS3, MySQL, MongoDB, Gulp, jQuery, Git, Cordova, Ionic, D3.js, Backbone.js.</p>
+
+                <p>I am comfortable developing on any layer of the stack and I get things done.</p>
+            </section>
+        </article>
+        <div style="border-top-color: rgb(242, 239, 232); display: block;" class="post-after even"></div>
+    </div>
+
+    <div class="post-holder odd">
+        
+            <article item_index="2" id="projects" class="post">
+        
+            <header class="post-header">
+                
+                <h2 class="post-title">Projects</h2>
+
+            </header>
+            <section class="post-content">
+                <p><a href="http://thoughtdrop.herokuapp.com/"></a></p>
+                <h5><a href="http://thoughtdrop.herokuapp.com/"><u>Thought Drop</u></a>
+                </h5>
+                <p>Thought Drop is a mobile app that creates serendipitous message discovery as users go about their day. You can leave a public note, or a private one for your friends! See what people are saying around you, both at the present and in the past!</p>
+
+                <p>Built by a team of 4 at Hack Reactor. I led full stack implementation of private feature with Oauth authentication and built the Node/Express server architecture. I also created the logic flow and implementation of storing geofenced private messages on MongoDB, recipients storing the messages on the local device, and monitoring all geofences.</p>
+
+                <p><a href="https://github.com/p3tuh/MightyPlayground">Source Code</a>
+                <a target="_blank" href="http://thoughtdrop.herokuapp.com/"> <img src="assets/messageStream-copy-1.png" alt=""> </a></p>
+
+                <p><a href="http://p3tuh.github.io/jarvis/"><u></u></a></p>
+                <h5><a href="http://p3tuh.github.io/jarvis/"><u>Jarvis</u></a></h5>
+                <p>Jarvis is a voice activated search assistant. Just tell Jarvis what you are searching for and where. </p>
+
+                <p>Jarvis utilizes Wit.ai's natural language speech API. The user's voice command is parsed into a string and sent to be analyzed by Wit.ai. Yahoo's search API is then sent the results to find what the user is searching for.</p>
+
+                <p><a href="https://github.com/p3tuh/jarvis">Source Code</a>
+                 <br><br>
+                <img target="_blank" src="assets/jarvis1.png" alt="Jarvis Landing Page">
+                <br> 
+                <img target="_blank" src="assets/jarvis2.png" alt="Jarvis">
+
+                <br><br> <br>
+                
+
+            </section>
+        </article>
+        <div style="border-top-color: rgb(0, 153, 204); display: none;" class="post-after"></div>
+    </div>
+
+    <div class="post-holder">
+        <article item_index="3" id="misc-facts" class="post">
+            <header class="post-header">
+                <h2 class="post-title">Miscellaneous</h2>
+            </header>
+            <section class="post-content">
+                <p></p><p>hire me!</p>
+                <br>
+                <br>
+            </section>
+        </article>
+        <div style="border-top-color: rgb(242, 239, 232); display: block;" class="post-after even"></div>
+    </div>
+
+    <div class="post-holder odd">
+        <article item_index="4" id="contact-me" class="post last">
+            <header class="post-header">
+                <h2 class="post-title">Contact</h2>
+            </header>
+            <section class="post-content">
+                <p> <a href="mailto:chong.peter.kim@gmail.com">Email</a></p>
+                <p> <a target="_blank" href="https://www.linkedin.com/in/petercwkim">LinkedIn</a></p>
+                <p> <a target="_blank" href="https://github.com/p3tuh">Github</a></p>
+            </section>
+        </article>
+        <div style="border-top-color: rgb(0, 153, 204); display: none;" class="post-after"></div>
+    </div>
+</main>
+<!-- 
+    <footer class="site-footer">
+        <div class="inner">
+             
+        </div>
+    </footer> -->
+    <script type="text/javascript" src="js/index.js"></script>
+
+
+</body>
+
+
+</html>
+
